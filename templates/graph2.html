@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "HIGHEST VS LOWEST SITES VISITED COMPARISON"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+		
+		        <!--{label: "192.168.28.1",  y: 1  },
+				<!--{ label: "192.168.27.2", y: 1  },
+				<!--{ label: "192.168.56.1", y: 4  },
+				<!--{ label: "192.168.56.2",  y: 2  },
+				<!--{ label: "192.168.1.107",  y: 1  }
+			{ y: 1,indexLabel: "\u2193 lowest",markerColor: "red", markerType: "triangle",label: "192.168.28.1"},
+		
+			{ y: 3, indexLabel: "\u2193 second highest",markerColor: "red", markerType: "square",label: "192.168.27.2" },
+		
+			{ y: 4 , indexLabel: "\u2191 highest",markerColor: "red", markerType: "cross",label: "192.168.56.1" },
+			{ y: 2 , indexLabel: "\u2191 third highest",markerColor: "red", markerType: "circle",label: "192.168.56.2"},
+			{ y: 1 , indexLabel: "\u2193 lowest",markerColor: "red", markerType: "triangle",label: "192.168.1.107"},
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
